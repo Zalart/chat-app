@@ -5,14 +5,15 @@ import './Contact.css';
 const name = 'Emily Murphy';
 const isOnline = true; */
 function Contact(props) {
+    const { avatar, name, online } = props;
     return (
         <div className="Contact">
-            <img className="avatar" src={props.avatar} alt={props.name} />
+            <img className="avatar" src={avatar} alt={name} />
             <div>
-                <div className="name">{props.name}</div>
+                <div className="name">{name}</div>
                 <div className="status">
-                    <span className={props.online ? 'status-online' : 'status-offline'}></span>
-                    <span className="status-text">{props.online ? 'Online' : 'Offline'}</span>
+                    <span className={online ? 'status-online' : 'status-offline'}></span>
+                    <span className="status-text">{online ? 'Online' : 'Offline'}</span>
                 </div>
             </div>
 
