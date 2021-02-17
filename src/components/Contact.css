@@ -20,7 +20,9 @@
     margin: 0 0 0.25rem;
     color: #eee;
   }
-  
+  .Contact .status {
+    cursor: pointer;
+  }
   /* Status text */
   .Contact .status .status-text {
     color: #999;
